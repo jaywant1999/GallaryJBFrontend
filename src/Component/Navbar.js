@@ -8,8 +8,8 @@ const Navbar = ({ isAuthorized, setIsAuthorized }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const correctUsername = "admin";   
-  const correctPassword = "12345";
+  const correctUsername = "jaywant1999";   
+  const correctPassword = "jaywant@99";
 
   const toUpload = () => {
     if (isAuthorized) {
