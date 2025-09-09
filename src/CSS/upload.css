@@ -1,0 +1,79 @@
+.maindiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  min-height: 300px;
+  width: 100%;
+  padding: 20px;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 450px;
+  margin: auto;
+  text-align: center;
+}
+
+.maindiv h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.maindiv input[type="file"] {
+  padding: 10px;
+  border: 2px dashed #6c63ff;
+  border-radius: 10px;
+  background: #f9f9ff;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 300px;
+}
+
+.maindiv input[type="file"]:hover {
+  border-color: #4b42d4;
+  background: #efefff;
+}
+
+.maindiv button {
+  background: #6c63ff;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.maindiv button:hover {
+  background: #4b42d4;
+  transform: translateY(-2px);
+}
+
+#uplds {
+  color: rgb(2, 188, 2);
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.maindiv img {
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  max-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.maindiv img:hover {
+  transform: scale(1.05);
+}

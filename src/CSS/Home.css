@@ -1,0 +1,72 @@
+.home-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  min-height: 90vh;
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ 
+.home-content {
+  padding-top: 100px;
+  max-width: 500px;
+  z-index: 1;
+}
+
+.home-title {
+  font-size: 2.5rem; 
+  margin-bottom: 20px;
+    background: linear-gradient(to right, rgb(115, 0, 255), rgb(0, 255, 21), rgb(207, 5, 5));
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-family: cursive;
+   text-shadow: -4px -4px 0px rgba(255, 255, 255, 0.9);
+}
+
+.home-description {
+  font-size: 1.2rem;
+    font-family: cursive;
+  color: #fff9f9;
+  margin-bottom: 30px;
+  line-height: 1.6;
+   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+   font-weight: bold;
+
+}
+
+.explore-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #7209b7;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #560bad;
+  transform: scale(1.05);
+}
+
+.home-animation {
+  font-size: 5rem;
+}
+
+.camera-icon {
+  padding-top: 100px;
+  display: inline-block;
+  animation: bounce 1.8s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
