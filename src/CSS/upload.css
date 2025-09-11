@@ -1,18 +1,23 @@
+.uplddiv {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
 .maindiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-
   min-height: 300px;
   width: 100%;
   padding: 20px;
-
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(6px);
   border-radius: 16px;
-
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   max-width: 450px;
   margin: auto;
@@ -76,4 +81,40 @@
 
 .maindiv img:hover {
   transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .maindiv {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .uplddiv {
+    min-height: 80vh;
+  }
+
+  .maindiv h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .maindiv {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .uplddiv {
+    min-height: 80vh;
+  }
+
+  .maindiv h2 {
+    font-size: 1.2rem;
+  }
+
+  .maindiv input  { 
+    text-align: center;
+    padding: 4px;
+    height: 25px;
+  }
 }

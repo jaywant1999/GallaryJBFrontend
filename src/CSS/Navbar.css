@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   color: rgb(0, 0, 0);
-  height: 60px; 
+  height: 60px;
   align-items: center;
   gap: 100px;
   font-size: large;
@@ -13,39 +13,38 @@
 }
 
 .navbar li a {
-  text-decoration: none; 
+  text-decoration: none;
   padding: 5px 15px;
   border-radius: 15px;
   font-style: italic;
   font-family: cursive;
   display: inline-block;
-  font-weight: bold; 
+  font-weight: bold;
   background: linear-gradient(to right, rgb(225, 0, 255), rgb(0, 247, 255));
   background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar li:hover a {
   border-bottom: 2px solid grey;
-  transform: scale(1.2);  
+  transform: scale(1.2);
   transition: transform 0.1s ease-in-out;
   font-weight: bolder;
 }
 
-.outer { 
+.outer {
   display: flex;
   width: 100%; 
-  flex-direction: row; 
+  flex-direction: row;
   padding: 5px 20px;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 0; 
-  z-index: 1000; 
+  top: 0;
+  z-index: 1000;
   flex-wrap: wrap;
 }
 
- 
 .upbtn {
   margin-right: 40px;
   width: 150px;
@@ -62,20 +61,18 @@
 .upbtn:hover {
   background-color: #2c732e;
   transition: transform 0.1s ease-in-out;
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 .login-modal {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);  
+  height: 10%;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2000; 
+  z-index: 2000;
 }
 
 .login-box {
@@ -90,6 +87,7 @@
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
   animation: fadeIn 0.3s ease-in-out;
   text-align: center;
+  padding-top: 100px;
 }
 
 .login-box h3 {
@@ -139,12 +137,17 @@
   background-color: #d32f2f;
 }
 
- 
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
- 
+
 @media (max-width: 1024px) {
   .navbar {
     gap: 40px;
@@ -158,18 +161,24 @@
     font-size: small;
   }
 
+  .nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-right: 20px;
+  }
+
   .login-box {
     width: 280px;
     padding: 20px;
   }
 
-  .outer{
-    gap: 30px; 
-    padding-left: 0px; 
+  .outer {
+    gap: 30px;
+    padding-left: 0px;
   }
 }
 
- 
 @media (max-width: 480px) {
   .navbar {
     flex-direction: row;
@@ -179,14 +188,20 @@
   }
 
   .upbtn {
-    width: 100px;
+    width: 80px;
     height: 32px;
     font-size: 13px;
   }
 
-  .outer{
-    gap: 30px; 
-    padding-left: 0px; 
+  .nav-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .outer {
+    flex-direction: column;
+    gap: 5px;
   }
 
   .login-box {
