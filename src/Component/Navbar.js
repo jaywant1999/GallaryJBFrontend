@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../CSS/Navbar.css';
 import { Link, useNavigate } from 'react-router-dom';
+import { FiLogOut } from "react-icons/fi";
+
 
 const Navbar = ({ isAuthorized, setIsAuthorized }) => {
   const navigate = useNavigate();
@@ -48,7 +50,7 @@ const Navbar = ({ isAuthorized, setIsAuthorized }) => {
       <div className="nav-buttons">
         <button className="upbtn" onClick={toUpload}>Upload</button>
         {isAuthorized && (
-          <button className="upbtn" onClick={handleLogout}>Logout</button>
+          <button title="Logout" className="lgbtn" onClick={handleLogout}><FiLogOut /></button>
         )}
       </div>
 

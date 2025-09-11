@@ -9,6 +9,7 @@ import video from "./Component/1.mp4";
 import { useEffect, useState } from "react";
 import About from "./Pages/About";
 
+
 function App() {
   const [isAuthorized, setIsAuthorized] = useState(false);
   const [showButton, setShowButton] = useState(false);

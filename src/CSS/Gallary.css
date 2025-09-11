@@ -12,6 +12,7 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
  position: relative;
+ padding-top: 100px;
 }
 
 .gallery-item img {
