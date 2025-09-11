@@ -1,13 +1,17 @@
 .aboutm {
   padding: 50px;
   display: flex;
+  flex-direction: row;
+  flex: 1;
   gap: 50px;
+ 
+  
 }
 
-.main{
-  width: full;
-  height: full;
-
+.main {
+ display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .info {
@@ -15,7 +19,7 @@
   background: rgba(0, 0, 0, 0.5);
   padding: 30px;
   border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
+  border-bottom-left-radius: 50px; 
  
 }
 
@@ -25,16 +29,16 @@
 
 .image {
   width: 50%;
-  margin: 45px;
   margin: auto;
   padding-bottom: 25px;
   text-align: center;
 }
 
 .image img {
-  width: 500px;
-  padding: auto;
+  width: 100%;
+  max-width: 500px;
   margin: auto;
+  display: block;
   text-align: center;
   border-radius: 50px;
 }
@@ -42,7 +46,8 @@
 .contact {
   padding: 15px 50px;
   background: black;
-  margin: 5px;
+  margin: 2px;
+  bottom: 0;
 }
 
 .contact a {
@@ -60,25 +65,27 @@
   margin-left: 20px;
 }
 
-@media (max-width: 868px) {
+@media (max-width: 1024px) {
   .aboutm {
     flex-direction: column;
     gap: 25px;
+
   }
 
   .info,
   .image {
-    width: 100%;
+    width: 90%;
   }
 
-  .info { 
- padding: 30px;
+  .info {
+    padding: 30px;
+    margin: 20px;
     font-size: 14px;
   }
 
   .image img {
-    width: 90%;
-    max-width: 300px;
+    max-width: 550px;
+    height: auto;
   }
 
   .contact {
@@ -90,11 +97,14 @@
     font-size: 16px;
     margin-left: 5px;
   }
+
+  .main{
+    min-height:100vh ;
+  }
 }
 
 @media (max-width: 480px) {
-
-  .aboutm{
+  .aboutm {
     padding: 10px;
   }
   .info {

@@ -25,7 +25,13 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50, transition: { duration: 1 } }}
         >
-         
+           <motion.div
+            className="camera-icon"
+            animate={{ y: [0, -15, 0] }}
+            transition={{ duration: 3, repeat: Infinity }}
+          >
+            <img src={camera} alt="camera" id="home-image"/>
+          </motion.div>
 
           <div className="home-content">
             <h1 className="home-title">Welcome to JB's Photo Gallery</h1>
@@ -43,13 +49,7 @@ const Home = () => {
             </motion.button>
           </div>
 
-          <motion.div
-            className="camera-icon"
-            animate={{ y: [0, -15, 0] }}
-            transition={{ duration: 3, repeat: Infinity }}
-          >
-            <img src={camera} alt="camera" />
-          </motion.div>
+         
         </motion.div>
       )}
     </AnimatePresence>

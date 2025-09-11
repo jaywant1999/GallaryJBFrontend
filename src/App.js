@@ -49,26 +49,23 @@ function App() {
           isAuthorized={isAuthorized}
           setIsAuthorized={setIsAuthorized}
         />
+
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route
-              path="/gallery"
-              element={<Gallary isAuthenticated={isAuthorized} />}
-            />
+            <Route path="/gallery" element={<Gallary isAuthenticated={isAuthorized} />}/>
             <Route path="/upload" element={<Upload />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </div>
+
       </BrowserRouter>
+     
       <div className="footer">
         <Footer />
       </div>
 
-      <button
-        className={`scroll-to-top ${showButton ? "" : "hidden"}`}
-        onClick={scrollToTop}
-      >
+      <button className={`scroll-to-top ${showButton ? "" : "hidden"}`} onClick={scrollToTop}>
         <h2>↑</h2>
       </button>
     </div>

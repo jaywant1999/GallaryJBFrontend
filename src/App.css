@@ -24,13 +24,12 @@
   z-index: -1;
 }
 
-.content {
-  margin-top: 100px;
+.content { 
   margin-bottom: 70px;
   flex: 1;
 }
 
-/* 🔼 Scroll-to-top button */
+ 
 .scroll-to-top {
   position: fixed;
   bottom: 100px;
@@ -60,12 +59,12 @@
 
 .scroll-to-top.hidden {
   opacity: 0;
-  transform: translateY(20px); /* slides slightly down when hiding */
+  transform: translateY(20px);  
   pointer-events: none;
 }
 
-/* 📱 Tablets */
-@media (max-width: 768px) {
+ 
+@media (max-width: 1024px) {
   .content {
     margin-top: 80px;
     margin-bottom: 60px;
@@ -80,11 +79,11 @@
   }
 }
 
-/* 📱 Small phones */
+ 
 @media (max-width: 480px) {
-  .content {
-    margin-top: 60px;
-    margin-bottom: 50px;
+  .content { 
+    margin-bottom: 70px;
+    text-align: center;
   }
 
   .scroll-to-top {

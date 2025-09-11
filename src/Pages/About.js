@@ -6,7 +6,6 @@ const About = () => {
   return (
     <div className="main">
       <div className="aboutm">
-
         <div className="image">
           <img src={profile} alt="profile pic" />
         </div>
@@ -41,8 +40,7 @@ const About = () => {
           <p className="text-gray-600">
             This project is special because it’s not only where I keep my
             personal photos safe, but also a showcase of my journey as a
-            full-stack developer, blending creativity with technology.
-            <span className="font-semibold">full-stack developer</span>. 🚀
+            full-stack developer . 
           </p>
         </div>
       </div>
@@ -50,11 +48,11 @@ const About = () => {
       <div className="contact">
         <h2>Contact :</h2>
         <h3>
-          e-mail :&nbsp;&nbsp;<a href="email">jawyantbelkhede@gmail.com</a>
+          e-mail :&nbsp;&nbsp;<a href="mailto:jawyantbelkhede@gmail.com">jawyantbelkhede@gmail.com</a>
         </h3>
         <h3>
           Instagram :&nbsp;&nbsp;
-          <a href="https://www.instagram.com/jaywant__99/?hl=en" target="blank">
+          <a href="https://www.instagram.com/jaywant__99/?hl=en" target="_blank" rel="noopener noreferrer">
             https://www.instagram.com/jaywant__99/?hl=en
           </a>
         </h3>
@@ -62,7 +60,8 @@ const About = () => {
           Linkedin : &nbsp;&nbsp;
           <a
             href="https://www.linkedin.com/in/jaywant-belkhede-6817b8230"
-            target="blank"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             linkedin.com/in/jaywant-belkhede-6817b8230{" "}
           </a>

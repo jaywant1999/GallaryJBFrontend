@@ -1,38 +1,44 @@
 .home-container {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: space-around;
   min-height: 90vh;
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
- 
+
 .home-content {
   padding-top: 100px;
-  max-width: 500px;
+  max-width: 750px;
   z-index: 1;
+  text-align: center;
 }
 
+ 
 .home-title {
-  font-size: 2.5rem; 
+  font-size: 2.8rem;
   margin-bottom: 20px;
-    background: linear-gradient(to right, rgb(115, 0, 255), rgb(0, 255, 21), rgb(207, 5, 5));
+  background: linear-gradient(
+    to right,
+    rgb(115, 0, 255),
+    rgb(0, 255, 21),
+    rgb(207, 5, 5)
+  );
   background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   font-family: cursive;
-   text-shadow: -4px -4px 0px rgba(255, 255, 255, 0.9);
+  text-shadow: -4px -4px 0px rgba(255, 255, 255, 0.9);
 }
 
 .home-description {
-  font-size: 1.2rem;
-    font-family: cursive;
+  font-size: 1.6rem;
+  font-family: cursive;
   color: #fff9f9;
   margin-bottom: 30px;
   line-height: 1.6;
-   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
-   font-weight: bold;
-
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+  font-weight: bold;
 }
 
 .explore-btn {
@@ -61,6 +67,10 @@
   animation: bounce 1.8s infinite ease-in-out;
 }
 
+#home-image{
+  width: 500px;
+}
+
 @keyframes bounce {
   0%,
   100% {
@@ -69,4 +79,43 @@
   50% {
     transform: translateY(-15px);
   }
+}
+
+@media (max-width: 1024px) {
+  .home-container {
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center; 
+  }
+
+  .home-content {
+    padding-top: 0px;
+    width: 100%;
+    margin: auto;   
+  }
+
+  #home-image {
+    width: 400px;
+  }
+
+ 
+
+}
+
+@media (max-width: 480px){
+.home-title{
+  font-size: 2rem;
+}
+
+.home-content{
+  width: 80%;
+}
+
+.home-description {
+  font-size: 0.8rem;  
+  margin-bottom: 30px;
+  line-height: 1.6;
+  text-shadow: 4px 8px 10px rgba(0, 0, 0.9, 3.5); 
+}
 }
