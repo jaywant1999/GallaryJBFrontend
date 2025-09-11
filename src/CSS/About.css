@@ -1,13 +1,22 @@
 .aboutm {
   padding: 50px;
   display: flex;
+  gap: 50px;
+}
+
+.main{
+  width: full;
+  height: full;
+
 }
 
 .info {
   width: 50%;
   background: rgba(0, 0, 0, 0.5);
   padding: 30px;
-  border-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+ 
 }
 
 .info li {
@@ -16,10 +25,9 @@
 
 .image {
   width: 50%;
-}
-
-.image {
+  margin: 45px;
   margin: auto;
+  padding-bottom: 25px;
   text-align: center;
 }
 
@@ -50,4 +58,59 @@
 .contact h3 {
   color: white;
   margin-left: 20px;
+}
+
+@media (max-width: 868px) {
+  .aboutm {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .info,
+  .image {
+    width: 100%;
+  }
+
+  .info { 
+ padding: 30px;
+    font-size: 14px;
+  }
+
+  .image img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .contact {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .contact h3 {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .aboutm{
+    padding: 10px;
+  }
+  .info {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  .image img {
+    max-width: 250px;
+  }
+
+  .contact {
+    padding: 8px 15px;
+  }
+
+  .contact h3 {
+    font-size: 12px;
+  }
 }

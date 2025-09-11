@@ -4,8 +4,13 @@ import profile from "../Component/profile.jpg";
 
 const About = () => {
   return (
-    <div >
-      <div className="aboutm"  >
+    <div className="main">
+      <div className="aboutm">
+
+        <div className="image">
+          <img src={profile} alt="profile pic" />
+        </div>
+
         <div className="info">
           <h1>Hi, I’m Jaywant</h1>
           <p>
@@ -40,10 +45,6 @@ const About = () => {
             <span className="font-semibold">full-stack developer</span>. 🚀
           </p>
         </div>
-
-        <div className="image">
-          <img src={profile} alt="profile pic" />
-        </div>
       </div>
 
       <div className="contact">
@@ -63,7 +64,6 @@ const About = () => {
             href="https://www.linkedin.com/in/jaywant-belkhede-6817b8230"
             target="blank"
           >
-           
             linkedin.com/in/jaywant-belkhede-6817b8230{" "}
           </a>
         </h3>
