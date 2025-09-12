@@ -49,6 +49,7 @@
   font-size: 0.8rem;
   z-index: 2;
   text-align: center;
+  height: 25px;
 }
 
 .gallery-item .delete-btn:hover {
