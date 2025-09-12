@@ -2,8 +2,8 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 100px; 
-  box-sizing: border-box; 
+  padding-top: 100px;
+  box-sizing: border-box;
   padding: 10px;
 }
 
@@ -33,10 +33,9 @@
 
 .gallery-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 2px 4px rgb(2, 146, 151),
-  0 8px 16px rgb(121, 2, 136);
+  box-shadow: 0 0px 4px rgb(2, 146, 151), 0 8px 16px rgb(121, 2, 136);
 }
- 
+
 .gallery-item .delete-btn {
   position: absolute;
   top: 8px;
@@ -57,9 +56,9 @@
 .gallery-item .delete-btn:hover {
   background: rgba(200, 0, 0, 1);
 }
- 
+
 @media (max-width: 992px) {
-  .gallery { 
+  .gallery {
     gap: 15px;
   }
   .gallery-item img {
@@ -68,7 +67,7 @@
 }
 
 @media (max-width: 600px) {
-  .gallery { 
+  .gallery {
     gap: 12px;
   }
   .gallery-item img {
@@ -81,7 +80,7 @@
     grid-template-columns: 1fr;
   }
   .gallery-item img {
-    height: 150px; 
+    height: 150px;
     max-width: 200px;
   }
 }
