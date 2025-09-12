@@ -67,15 +67,15 @@ const Gallary = () => {
           width: img.width,
           height: img.height,
         }))}
-       plugins={[Zoom]}
-  zoom={{
-    maxZoomPixelRatio: 3,
-    zoomInMultiplier: 1.5,
-    doubleTapDelay: 300,
-    doubleClickZoom: 2,
-    keyboardMoveDistance: 50,
-    wheelZoomDistanceFactor: 100,
-  }}
+        plugins={[Zoom]}
+        zoom={{
+          maxZoomPixelRatio: 3,
+          zoomInMultiplier: 1.5,
+          doubleTapDelay: 300,
+          doubleClickZoom: 2,
+          keyboardMoveDistance: 50,
+          wheelZoomDistanceFactor: 100,
+        }}
       />
     </div>
   );

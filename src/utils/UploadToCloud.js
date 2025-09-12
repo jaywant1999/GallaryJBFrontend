@@ -1,5 +1,5 @@
-const cloud_name = "dky116j9n"; 
-const upload_preset = "gallarybyjb";
+const cloud_name = process.env.REACT_APP_CLOUD_NAME; 
+const upload_preset = process.env.REACT_APP_UPLOAD_PRESET;
 
 export const UploadToCloud = async (pics, fileType,  folder = "GalleryJB") => {
   if (pics && fileType) {

@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import '../CSS/Navbar.css';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import "../CSS/Navbar.css";
+import { Link, useNavigate } from "react-router-dom";
 import { FiLogOut } from "react-icons/fi";
-
 
 const Navbar = ({ isAuthorized, setIsAuthorized }) => {
   const navigate = useNavigate();
@@ -10,14 +9,14 @@ const Navbar = ({ isAuthorized, setIsAuthorized }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const correctUsername = "jaywant1999";   
-  const correctPassword = "jaywant@99";
+  const correctUsername = process.env.REACT_APP_LOGIN_USERNAME;
+  const correctPassword = process.env.REACT_APP_LOGIN_PASSWORD;
 
   const toUpload = () => {
     if (isAuthorized) {
-      navigate('/upload');
+      navigate("/upload");
     } else {
-      setShowLogin(true);  
+      setShowLogin(true);
     }
   };
 
@@ -25,9 +24,9 @@ const Navbar = ({ isAuthorized, setIsAuthorized }) => {
     e.preventDefault();
     if (username === correctUsername && password === correctPassword) {
       setIsAuthorized(true);
-      sessionStorage.setItem("isAuthorized", "true"); 
+      sessionStorage.setItem("isAuthorized", "true");
       setShowLogin(false);
-      navigate('/upload'); 
+      navigate("/upload");
     } else {
       alert("Invalid username or password");
     }
@@ -35,23 +34,35 @@ const Navbar = ({ isAuthorized, setIsAuthorized }) => {
 
   const handleLogout = () => {
     setIsAuthorized(false);
-    sessionStorage.removeItem("isAuthorized"); 
-    navigate('/');
+    sessionStorage.removeItem("isAuthorized");
+    navigate("/");
   };
 
   return (
-    <div className="outer">
-      <ul className="navbar">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/gallery">Gallery</Link></li>
-        <li><Link to="/about">About</Link></li>
-      </ul>
+    <div>
+      <div className="outer">
+        <ul className="navbar">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/gallery">Gallery</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+        </ul>
 
-      <div className="nav-buttons">
-        <button className="upbtn" onClick={toUpload}>Upload</button>
-        {isAuthorized && (
-          <button title="Logout" className="lgbtn" onClick={handleLogout}><FiLogOut /></button>
-        )}
+        <div className="nav-buttons">
+          <button className="upbtn" onClick={toUpload}>
+            Upload
+          </button>
+          {isAuthorized && (
+            <button title="Logout" className="lgbtn" onClick={handleLogout}>
+              <FiLogOut />
+            </button>
+          )}
+        </div>
       </div>
 
       {showLogin && (
@@ -71,7 +82,9 @@ const Navbar = ({ isAuthorized, setIsAuthorized }) => {
               onChange={(e) => setPassword(e.target.value)}
             />
             <button type="submit">Login</button>
-            <button type="button" onClick={() => setShowLogin(false)}>Cancel</button>
+            <button type="button" onClick={() => setShowLogin(false)}>
+              Cancel
+            </button>
           </form>
         </div>
       )}

@@ -40,19 +40,28 @@ const About = () => {
           <p className="text-gray-600">
             This project is special because it’s not only where I keep my
             personal photos safe, but also a showcase of my journey as a
-            full-stack developer . 
+            full-stack developer .
           </p>
         </div>
       </div>
 
       <div className="contact">
-        <h2>Contact :</h2>
+        <div id="contact-heading">
+          <h2>Contact</h2>
+        </div>
         <h3>
-          e-mail :&nbsp;&nbsp;<a href="mailto:jawyantbelkhede@gmail.com">jawyantbelkhede@gmail.com</a>
+          e-mail :&nbsp;&nbsp;
+          <a href="mailto:jawyantbelkhede@gmail.com">
+            jawyantbelkhede@gmail.com
+          </a>
         </h3>
         <h3>
           Instagram :&nbsp;&nbsp;
-          <a href="https://www.instagram.com/jaywant__99/?hl=en" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/jaywant__99/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             https://www.instagram.com/jaywant__99/?hl=en
           </a>
         </h3>

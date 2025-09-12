@@ -9,7 +9,6 @@ import video from "./Component/1.mp4";
 import { useEffect, useState } from "react";
 import About from "./Pages/About";
 
-
 function App() {
   const [isAuthorized, setIsAuthorized] = useState(false);
   const [showButton, setShowButton] = useState(false);
@@ -54,19 +53,24 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/gallery" element={<Gallary isAuthenticated={isAuthorized} />}/>
+            <Route
+              path="/gallery"
+              element={<Gallary isAuthenticated={isAuthorized} />}
+            />
             <Route path="/upload" element={<Upload />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </div>
-
       </BrowserRouter>
-     
+
       <div className="footer">
         <Footer />
       </div>
 
-      <button className={`scroll-to-top ${showButton ? "" : "hidden"}`} onClick={scrollToTop}>
+      <button
+        className={`scroll-to-top ${showButton ? "" : "hidden"}`}
+        onClick={scrollToTop}
+      >
         <h2>↑</h2>
       </button>
     </div>

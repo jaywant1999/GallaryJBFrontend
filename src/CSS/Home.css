@@ -1,18 +1,20 @@
 .home-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  min-height: 90vh;
+  justify-content: center;
+  justify-items: center;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  gap: 20px;
 }
 
-.home-content {
-  padding-top: 100px;
+.home-content { 
   max-width: 750px;
   z-index: 1;
   text-align: center;
+  margin: auto;
 }
 
  
@@ -39,6 +41,7 @@
   line-height: 1.6;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
   font-weight: bold;
+  padding: 20px;
 }
 
 .explore-btn {
@@ -61,10 +64,11 @@
   font-size: 5rem;
 }
 
-.camera-icon {
-  padding-top: 100px;
+.camera-icon { 
   display: inline-block;
   animation: bounce 1.8s infinite ease-in-out;
+  max-height: 100%;
+  margin: auto;
 }
 
 #home-image{
@@ -84,22 +88,20 @@
 @media (max-width: 1024px) {
   .home-container {
     flex-direction: column;
-    justify-content: center;
-    justify-items: center;
+  
     text-align: center; 
   }
 
   .home-content {
     padding-top: 0px;
     width: 100%;
-    margin: auto;   
+    margin: auto;  
+    margin-top: 0px; 
   }
 
-  #home-image {
-    width: 400px;
+   #home-image {
+    width: 350px;
   }
-
- 
 
 }
 
@@ -110,6 +112,7 @@
 
 .home-content{
   width: 80%;
+  
 }
 
 .home-description {
@@ -118,4 +121,10 @@
   line-height: 1.6;
   text-shadow: 4px 8px 10px rgba(0, 0, 0.9, 3.5); 
 }
+
+  #home-image {
+    width: 200px;
+  }
+
+ 
 }
