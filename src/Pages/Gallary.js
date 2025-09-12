@@ -4,6 +4,7 @@
   import Zoom from "yet-another-react-lightbox/plugins/zoom";
   import "yet-another-react-lightbox/styles.css";
   import { getImages, deleteImage } from "../api";
+  import { MdDeleteOutline } from "react-icons/md";
 
   const Gallary = () => {
     const [imageList, setImageList] = useState([]);
@@ -51,7 +52,7 @@
                   className="delete-btn"
                   onClick={() => handleDelete(image.public_id)}
                 >
-                  Delete
+                  <MdDeleteOutline />
                 </button>
               )}
             </div>
