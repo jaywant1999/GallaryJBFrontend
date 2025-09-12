@@ -33,10 +33,9 @@
 
 .gallery-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 2px 4px rgba(120, 1, 120, 0.6),
-  0 8px 16px rgba(185, 2, 185, 0.6);;
+  box-shadow: 0 2px 4px rgb(2, 146, 151),
+  0 8px 16px rgb(121, 2, 136);
 }
-
  
 .gallery-item .delete-btn {
   position: absolute;
