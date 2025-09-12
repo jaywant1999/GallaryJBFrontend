@@ -1,16 +1,16 @@
 .gallery-container {
   width: 100%;
-  max-width: 1200px;  
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
   padding-top: 50px;
+  box-sizing: border-box;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  padding: 20px;
-  padding-bottom: 100px;
   width: 100%;
 }
 
@@ -32,15 +32,15 @@
 
 .gallery-item:hover {
   transform: scale(1.05);
-  transition: transform 0.05s ease-in-out;
-  box-shadow: 0px 5px 0px 0px rgb(185, 2, 185);
+  box-shadow: 0px 5px 10px rgba(185, 2, 185, 0.6);
 }
 
+/* Delete button */
 .gallery-item .delete-btn {
   position: absolute;
   top: 8px;
   right: 8px;
-  background: rgba(255, 0, 0, 0.8);
+  background: rgba(255, 0, 0, 0.85);
   color: white;
   border: none;
   border-radius: 5px;
@@ -52,4 +52,35 @@
 
 .gallery-item .delete-btn:hover {
   background: rgba(200, 0, 0, 1);
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+  .gallery-item img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+  }
+  .gallery-item img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .gallery-item img {
+    height: auto;
+    max-height: 250px;
+  }
 }
