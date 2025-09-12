@@ -55,21 +55,21 @@
  
 @media (max-width: 992px) {
   .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
   }
   .gallery-item img {
-    height: 150px;
+    height: 200px;
   }
 }
 
 @media (max-width: 600px) {
   .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 12px;
   }
   .gallery-item img {
-    height: 150px;
+    height: 200px;
   }
 }
 
