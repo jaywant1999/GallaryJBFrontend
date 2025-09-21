@@ -47,7 +47,7 @@
           {imageList.map((image, i) => (
             <div className="gallery-item" key={image.asset_id || i}>
               {!loadedImages[image.public_id] && (
-                <div className="image-loader">Loading...</div>
+               <div className="spinner small-spinner"></div>
               )}
               <img
                 src={image.secure_url}
