@@ -109,6 +109,10 @@
     grid-template-columns: 1fr;
     place-items: center;
   }
+
+  .gallery-item{
+    margin: auto;
+  }
   .gallery-item img {
     height: 150px;
     max-width: 200px;
