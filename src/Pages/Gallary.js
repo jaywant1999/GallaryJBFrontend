@@ -9,6 +9,7 @@
   const Gallary = () => {
     const [imageList, setImageList] = useState([]);
     const [index, setIndex] = useState(-1);
+    const [loadedImages, setLoadedImages] = useState({});
 
     const isAuthenticated = sessionStorage.getItem("isAuthorized") === "true";
 
@@ -36,15 +37,26 @@
       }
     };
 
+    const handleImageLoad = (public_id) => {
+    setLoadedImages((prev) => ({ ...prev, [public_id]: true }));
+  };
+
     return (
       <div className="gallery-container">
         <div className="gallery">
           {imageList.map((image, i) => (
             <div className="gallery-item" key={image.asset_id || i}>
+              {!loadedImages[image.public_id] && (
+                <div className="image-loader">Loading...</div>
+              )}
               <img
                 src={image.secure_url}
                 alt={image.public_id}
                 onClick={() => setIndex(i)}
+                onLoad={() => handleImageLoad(image.public_id)}
+                style={{
+                  display: loadedImages[image.public_id] ? "block" : "none",
+                }}
               />
 
               {isAuthenticated && (
