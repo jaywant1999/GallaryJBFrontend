@@ -101,10 +101,6 @@
 }
 
 @media (max-width: 400px) {
-  .gallery {
-    grid-template-columns: 1fr;
-    place-items: center;
-  }
 
   .gallery-item{
     margin: auto;
