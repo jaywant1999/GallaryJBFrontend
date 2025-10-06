@@ -23,12 +23,16 @@
   margin: auto;
 }
 
+#liarrow{
+  margin-right: 5px;
+}
+
 .info li {
   list-style: none;
 }
 
 .info ul {
-  padding: 0px;
+  padding: 20px;
 }
 
 .image {

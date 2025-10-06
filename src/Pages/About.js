@@ -26,10 +26,10 @@ const About = () => {
           </p>
           <h2>✨ Features</h2>
           <ul>
-            <li><LiaHandPointRightSolid/>Upload and store my photos in Cloudinary</li>
-            <li><LiaHandPointRightSolid/>View them in a clean gallery layout</li>
-            <li><LiaHandPointRightSolid/>Delete photos when needed</li>
-            <li><LiaHandPointRightSolid/>Only I can upload the my photoes, I put authentication with
+            <li><LiaHandPointRightSolid id="liarrow"/>Upload and store my photos in Cloudinary</li>
+            <li><LiaHandPointRightSolid id="liarrow"/>View them in a clean gallery layout</li>
+            <li><LiaHandPointRightSolid id="liarrow"/>Delete photos when needed</li>
+            <li><LiaHandPointRightSolid id="liarrow"/>Only I can upload the my photoes, I put authentication with
               username and password while uploading photoes.
             </li>
           </ul>
