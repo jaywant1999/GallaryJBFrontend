@@ -68,10 +68,13 @@
 }
 
 .contact a {
+  position: relative;
+  display: inline-block;
+  color: inherit;
   text-decoration: none;
-  color: gray;
-  font-weight: 400;
+  outline: none;
 }
+
 
 .contact a:after {
  content: "";
