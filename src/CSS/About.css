@@ -73,13 +73,22 @@
   font-weight: 400;
 }
 
-.contact a:hover {
-  text-decoration: underline;
+.contact a:after {
+ content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;                  
+  bottom: -3px;                
   background: currentColor;    
   transform: scaleX(0);
   transform-origin: center;    
   transition: transform 250ms cubic-bezier(.2,.9,.3,1);
   pointer-events: none;
+}
+
+.contact a:hover{
+  transform: scaleX(1);
 }
 
 .contact h3 {
