@@ -24,7 +24,7 @@
 }
 
 .gallery-item img {
-  width: 100%;
+  width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 12px;
@@ -90,19 +90,20 @@
   .gallery {
     gap: 15px;
   }
- 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   .gallery {
     gap: 12px;
   }
-   
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
 
-  .gallery-item{
+  .gallery-item {
     margin: auto;
     height: 100px;
     width: 100px;
