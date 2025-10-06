@@ -24,11 +24,10 @@ const About = () => {
           </p>
           <h2>✨ Features</h2>
           <ul>
-            <li>✔ Upload and store my photos in Cloudinary</li>
-            <li>✔ View them in a clean gallery layout</li>
-            <li>✔ Delete photos when needed</li>
-            <li>
-              ✔ Only I can upload the my photoes, I put authentication with
+            <li>Upload and store my photos in Cloudinary</li>
+            <li>View them in a clean gallery layout</li>
+            <li>Delete photos when needed</li>
+            <li>Only I can upload the my photoes, I put authentication with
               username and password while uploading photoes.
             </li>
           </ul>

@@ -19,6 +19,8 @@
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
   backdrop-filter: blur(4px);
+  text-align: center;
+  margin: auto;
 }
 
 .info li {

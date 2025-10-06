@@ -270,7 +270,8 @@
 }
 
 @media (max-width: 330px) {
-  .navbar li {
+  .navbar li a{
     font-size: 10px;
+    padding: 5px;
   }
 }
