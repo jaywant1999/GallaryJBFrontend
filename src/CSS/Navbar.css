@@ -32,7 +32,7 @@
 }
 
 .navbar li:hover a {
-  border-bottom: 4px solid rgb(187, 187, 187);
+  border-bottom: 2px solid rgb(119, 119, 119);
   transform: scale(1.2);
   transition: transform 0.1s ease-in-out;
   font-weight: bolder;
@@ -77,11 +77,11 @@
   color: #fff;
   cursor: pointer;
   text-align: center;
+  transition: transform 0.1s ease-in-out;
 }
 
 .lgbtn:hover {
   background-color: rgba(200, 0, 0, 1);
-  transition: transform 0.1s ease-in-out;
   transform: scale(1.2);
 }
 
@@ -271,6 +271,6 @@
 
 @media (max-width: 330px) {
   .navbar li {
-    font-size: x-small;
+    font-size: 10px;
   }
 }

@@ -90,18 +90,14 @@
   .gallery {
     gap: 15px;
   }
-  .gallery-item img {
-    height: 200px;
-  }
+ 
 }
 
 @media (max-width: 600px) {
   .gallery {
     gap: 12px;
   }
-  .gallery-item img {
-    height: 200px;
-  }
+   
 }
 
 @media (max-width: 400px) {
@@ -112,9 +108,7 @@
 
   .gallery-item{
     margin: auto;
-  }
-  .gallery-item img {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
 }
