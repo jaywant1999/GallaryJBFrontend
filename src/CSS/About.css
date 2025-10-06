@@ -29,6 +29,7 @@
 
 .info li {
   list-style: none;
+  text-align: center;
 }
 
 .info ul {
@@ -74,7 +75,7 @@
 .contact a {
   position: relative;
   display: inline-block;
-  color: inherit;
+  color: gray;
   text-decoration: none;
   outline: none;
 }
