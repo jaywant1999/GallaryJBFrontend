@@ -27,6 +27,10 @@
   list-style: none;
 }
 
+.info ul{
+  padding: 0px;
+}
+
 .image {
   width: 50%;
   margin: auto;
@@ -71,6 +75,11 @@
 
 .contact a:hover {
   text-decoration: underline;
+  background: currentColor;    
+  transform: scaleX(0);
+  transform-origin: center;    
+  transition: transform 250ms cubic-bezier(.2,.9,.3,1);
+  pointer-events: none;
 }
 
 .contact h3 {
