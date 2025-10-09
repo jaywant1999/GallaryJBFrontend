@@ -16,8 +16,7 @@
   text-decoration: none;
   padding: 5px 15px;
   border-radius: 15px;
-  font-style: italic;
-  font-family: cursive;
+  font-style: italic; 
   display: inline-block;
   font-weight: bold;
   background: linear-gradient(
@@ -86,8 +85,7 @@
 }
 
 .upbtn:active,
-.lgbtn:active {
-    transition: transform 0.1s ease-in-out;
+.lgbtn:active { 
   transform: scale(1.2);
 }
 
