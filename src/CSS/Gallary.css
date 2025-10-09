@@ -31,6 +31,12 @@
   transition: transform 0.3s ease-in-out;
 }
 
+.gallery-item{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
 .gallery-item:hover {
   transform: scale(1.05);
   box-shadow: 0 3px 4px rgb(2, 146, 151), 0 6px 16px rgb(121, 2, 136);
