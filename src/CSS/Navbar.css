@@ -82,19 +82,19 @@
 
 .lgbtn:hover {
   background-color: rgba(200, 0, 0, 1);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .upbtn:active,
 .lgbtn:active { 
-  transform: scale(1.2);
+  transform: scale(0.9);
 }
 
  
 
 .upbtn:hover {
   background-color: #2f7f32; 
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .nav-buttons {
