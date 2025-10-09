@@ -63,6 +63,7 @@
   font-size: large;
   color: #fff;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 .lgbtn {
@@ -76,7 +77,7 @@
   color: #fff;
   cursor: pointer;
   text-align: center;
-  transition: transform 0.1s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .lgbtn:hover {
@@ -92,8 +93,7 @@
  
 
 .upbtn:hover {
-  background-color: #2c732e;
-  transition: transform 0.1s ease-in-out;
+  background-color: #2f7f32; 
   transform: scale(1.2);
 }
 
