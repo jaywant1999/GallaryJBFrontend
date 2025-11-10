@@ -114,4 +114,8 @@
     height: 100px;
     width: 100px;
   }
+
+  .gallery-item img{
+    object-fit: cover;
+  }
 }
