@@ -113,11 +113,13 @@
     margin: auto;
     max-height: 100px;
     max-width: 100px;
+    overflow: hidden;
   }
 
   .gallery-item img{
      max-height: 100px;
     max-width: 100px;
     object-fit: cover;
+    overflow: hidden;
   }
 }
