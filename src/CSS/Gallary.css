@@ -21,6 +21,9 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
 }
 
 .gallery-item img {
@@ -29,12 +32,6 @@
   object-fit: cover;
   border-radius: 12px;
   transition: transform 0.3s ease-in-out;
-}
-
-.gallery-item{
-  width: 200px;
-  height: 200px;
-  margin: auto;
 }
 
 .gallery-item:hover {
@@ -116,7 +113,7 @@
     overflow: hidden;
   }
 
-  .gallery-item img{
+  .gallery-item img {
     height: 100px;
     width: 100px;
     object-fit: cover;
