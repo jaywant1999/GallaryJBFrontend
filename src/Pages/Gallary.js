@@ -49,7 +49,8 @@ const Gallary = () => {
   return (
     <div className="gallery-container">
       <div className="gallery">
-        {imageList.map((image, i) => (
+        {Array.isArray(imageList) &&
+        imageList.map((image, i) => (
           <div className="gallery-item" key={image.asset_id || i}>
             {!loadedImages[image.public_id] && (
               <div className="spinner small-spinner"></div>
@@ -74,6 +75,7 @@ const Gallary = () => {
             )}
           </div>
         ))}
+      
       </div>
 
       <Lightbox

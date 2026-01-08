@@ -2,6 +2,9 @@ const API_URL = process.env.REACT_APP_API_URL || "http://localhost:1712";
 
 export const getImages = async()=>{
     const response = await fetch(`${API_URL}/gallery`);
+     if (!response.ok) {
+    throw new Error("API failed");
+  }
     const responseJSON = await response.json();
     return responseJSON;
 }
