@@ -19,7 +19,7 @@ const Navbar = ({ isAuthorized, setIsAuthorized }) => {
       setShowLogin(true);
     }
   };
-
+          
   const handleLogin = (e) => {
     e.preventDefault();
     if (username === correctUsername && password === correctPassword) {

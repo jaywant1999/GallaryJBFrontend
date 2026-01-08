@@ -8,7 +8,7 @@ const Upload = ({ onUpload }) => {
   const [uploadedUrl, setUploadedUrl] = useState("");
   const navigate = useNavigate();
 
-  const handleFileChange = (e) => {
+  const handleFileChange = (e) => { 
     setFile(e.target.files[0]);
   };
 
@@ -48,6 +48,7 @@ const Upload = ({ onUpload }) => {
           </div>
         )}
       </div>
+
     </div>
   );
 };
