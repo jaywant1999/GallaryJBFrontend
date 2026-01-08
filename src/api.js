@@ -9,6 +9,8 @@ export const getImages = async()=>{
     return responseJSON;
 }
 
+console.log("api url",API_URL);
+
 export const deleteImage = async (public_id) => {
   const response = await fetch(`${API_URL}/gallery/${encodeURIComponent(public_id)}`, {
     method: "DELETE",
